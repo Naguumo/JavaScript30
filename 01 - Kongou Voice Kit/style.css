@@ -1,0 +1,53 @@
+body {
+  min-height: 100vh;
+  background: url('images/kongou_kantai_collection_drawn_by_baffu.png') center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-fluid {
+  min-height: 100vh;
+  align-items: center;
+}
+
+.key {
+  border: .1rem solid rgb(251, 255, 0);
+  border-radius: .5rem;
+  transition: all .07s ease;
+  width: 12vh !Important;
+  text-align: center;
+  color: white;
+  background: rgba(147, 177, 38, 0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #0126f7;
+  box-shadow: 0 0 1rem #0126f7;
+}
+
+.sound {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #0126f7;
+}
+
+@media only screen and (orientation:portrait){
+#container-fluid {
+  height: 100vw;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}}
+@media only screen and (orientation:landscape){
+#container-fluid {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}}
